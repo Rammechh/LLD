@@ -13,6 +13,6 @@ public class Employee {
 
     void display(){
         System.out.println(id + " " + name);
-        System.out.println("City-"+ address.city+"State-"+address.state+"Country-"+address.country);
+        System.out.println("City-"+ address.city+" State-"+address.state+" Country-"+address.country);
     }
 }
