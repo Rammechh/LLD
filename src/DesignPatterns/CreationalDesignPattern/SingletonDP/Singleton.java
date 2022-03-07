@@ -1,4 +1,4 @@
-package SOLID_Principles.SRP;
+package DesignPatterns.CreationalDesignPattern.SingletonDP;
 
 public class Singleton {
     // https://www.concretepage.com/design-pattern/example-singleton-design-pattern-java
