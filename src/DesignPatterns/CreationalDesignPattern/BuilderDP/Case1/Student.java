@@ -57,7 +57,7 @@ public class Student {
     }
 
     //4th Approach (final Approach)
-    public static class StudentBuilder{
+    public static class StudentBuilder {
         private Student student = new Student();
 
         public StudentBuilder setName(String name){
@@ -92,7 +92,7 @@ public class Student {
             return student1;
         }
 
-        Student build(){
+        Student build() {
             if (student.age < 18){
                 throw new InvalidParameterException();
             }
@@ -107,6 +107,8 @@ public class Student {
 //            return student1;
 //            (or)
             return clone(student);
+            //https://www.geeksforgeeks.org/clone-method-in-java-2/ refer for cloning obj
+
         }
 
     }
