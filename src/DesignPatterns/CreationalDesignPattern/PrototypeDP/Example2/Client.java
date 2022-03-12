@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Client {
-
+//    Client has to register the prototypes
 //    1. Read a list of string
 //    a4_rule_120
 //    a4_plain_120
