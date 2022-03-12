@@ -57,10 +57,4 @@ public class Client {
             notebooks.add(prototype);
         }
     }
-
-
-
-
-
-
 }
