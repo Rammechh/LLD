@@ -18,8 +18,7 @@ public class Client {
         CurrentScoreDisplay currentScoreDisplay = new CurrentScoreDisplay();
 
         // Pass the displays to Cricket data
-        CricketData cricketData = new CricketData(currentScoreDisplay,
-                averageScoreDisplay);
+        CricketData cricketData = new CricketData(currentScoreDisplay, averageScoreDisplay);
 
         // In real app you would have some logic to call this
         // function when data changes
