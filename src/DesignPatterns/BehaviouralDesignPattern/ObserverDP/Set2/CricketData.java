@@ -3,7 +3,7 @@ package DesignPatterns.BehaviouralDesignPattern.ObserverDP.Set2;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class CricketData {
+public class CricketData implements Subject {
     int runs, wickets;
     float overs;
 
