@@ -1,9 +1,6 @@
 package Designs.DesignPen;
 
-public abstract class Pen implements Writable{
+public abstract class Pen {
 
-    @Override
-    public void write(){
-        System.out.println("Pen method");
-    }
+    public abstract void write();
 }

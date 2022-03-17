@@ -1,9 +1,9 @@
 package Designs.DesignPen;
 
-public class Pencil implements Writable{
+public class Pencil extends Pen{
 
     @Override
-    public void write(){
-
+    public void write() {
+        System.out.println("Pencil");
     }
 }

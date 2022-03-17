@@ -1,5 +1,10 @@
 package Designs.DesignPen;
 
-public class RefillPen extends Pen{
+public abstract class RefillPen extends Pen{
+
+    private int refillLength;
+    private int refillWidth;
+
+
 
 }
