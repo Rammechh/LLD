@@ -18,10 +18,10 @@ public abstract class Cell {
 
     public abstract Integer getNextPosition();
 
-   public void removePiece(){
+   public void removePiece(Piece piece){
 
    }
-   public void addPiece(){
+   public void addPiece(Piece piece){
 
    }
 }
