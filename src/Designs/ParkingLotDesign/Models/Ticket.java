@@ -1,5 +1,6 @@
 package Designs.ParkingLotDesign.Models;
 
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -7,7 +8,8 @@ import java.time.LocalDateTime;
 
 @Getter
 @Setter
-public class Ticket {
+@Builder
+public class Ticket extends BaseModel{
     private String ticketId;
     private String vehicleId;
     private VehicleType vehicleType;

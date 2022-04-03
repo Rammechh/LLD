@@ -5,7 +5,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class ParkingSpot {
+public class ParkingSpot extends BaseModel {
     private Integer spotId;
     private Integer floorNumber;
     private VehicleType vehicleType;
