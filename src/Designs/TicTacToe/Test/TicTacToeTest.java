@@ -1,5 +1,6 @@
 package Designs.TicTacToe.Test;
 
+import Designs.TicTacToe.Factories.PlayerFactory;
 import Designs.TicTacToe.Models.*;
 
 import org.junit.Before;
@@ -57,8 +58,9 @@ public class TicTacToeTest {
                 .withDimensions(3, 3)
 
                 .withPlayers(
-                        HumanPlayer.builder()
-                                .symbol(GameSymbol.O)
+//                        HumanPlayer.builder()
+                        PlayerFactory.getHumanPlayer()
+                                .symbol(O)
                                 .user(
                                         User.builder()
                                                 .email("abc@gmail.com")
@@ -67,7 +69,7 @@ public class TicTacToeTest {
 
                 .withPlayers(
                         Bot.builder()
-                                .symbol(GameSymbol.X)
+                                .symbol(X)
                                 .build())
 
                 .build();
