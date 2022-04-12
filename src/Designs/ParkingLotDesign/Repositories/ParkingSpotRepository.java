@@ -15,6 +15,12 @@ public class ParkingSpotRepository {
         return parkingSpot;
     }
 
+    public ParkingSpot remove(ParkingSpot parkingSpot){
+        parkingSpots.remove(parkingSpot);
+        return parkingSpot;
+
+    }
+
     public ParkingSpot findOneByVehicleTypeAndStatusAvailable(VehicleType type){
         for(ParkingSpot parkingSpot : parkingSpots){
             if (parkingSpot.getSpotStatus() == SpotStatus.AVAILABLE && parkingSpot.getVehicleType() == type){
@@ -24,4 +30,12 @@ public class ParkingSpotRepository {
         return null;
     }
 
+    public ParkingSpot getSpot(Integer spotId) {
+        for(ParkingSpot parkingSpot : parkingSpots){
+            if (parkingSpot.getSpotId() == spotId){
+                return parkingSpot;
+            }
+        }
+        return null;
+    }
 }

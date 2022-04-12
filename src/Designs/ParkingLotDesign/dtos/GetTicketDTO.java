@@ -1,5 +1,6 @@
 package Designs.ParkingLotDesign.dtos;
 
+import Designs.ParkingLotDesign.Models.ParkingSpot;
 import Designs.ParkingLotDesign.Models.VehicleType;
 import lombok.Builder;
 import lombok.Getter;

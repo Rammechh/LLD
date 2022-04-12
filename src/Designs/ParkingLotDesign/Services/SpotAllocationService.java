@@ -10,4 +10,9 @@ public class SpotAllocationService {
     public ParkingSpot allocateSlot(VehicleType vehicleType) {
         return parkingSpotRepository.findOneByVehicleTypeAndStatusAvailable(vehicleType);
     }
+
+    public ParkingSpot removeSlot(Integer spotId) {
+        return parkingSpotRepository.getSpot(spotId);
+    }
+
 }

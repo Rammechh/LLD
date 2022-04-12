@@ -9,4 +9,8 @@ public class ParkingSpotService {
     public void markSlotBooked(ParkingSpot spot){
         parkingSpotRepository.save(spot);
     }
+
+    public void markSlotAvailable(ParkingSpot spot){
+        parkingSpotRepository.remove(spot);
+    }
 }
